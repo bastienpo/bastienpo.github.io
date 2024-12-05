@@ -3,6 +3,7 @@ version = 1
 [install]
 nodejs_22.pkg-path = "nodejs_22"
 pnpm.pkg-path = "pnpm"
+gh.pkg-path = "gh"
 
 [vars]
 node_verison = "22"

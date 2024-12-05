@@ -3,6 +3,9 @@
   "manifest": {
     "version": 1,
     "install": {
+      "gh": {
+        "pkg-path": "gh"
+      },
       "nodejs_22": {
         "pkg-path": "nodejs_22"
       },
@@ -30,6 +33,122 @@
     }
   },
   "packages": [
+    {
+      "attr_path": "gh",
+      "broken": false,
+      "derivation": "/nix/store/18mr25s2mxdnmv0yfqlk53c7xpcng00s-gh-2.63.0.drv",
+      "description": "GitHub CLI tool",
+      "install_id": "gh",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=55d15ad12a74eb7d4646254e13638ad0c4128776",
+      "name": "gh-2.63.0",
+      "pname": "gh",
+      "rev": "55d15ad12a74eb7d4646254e13638ad0c4128776",
+      "rev_count": 716003,
+      "rev_date": "2024-12-03T07:54:31Z",
+      "scrape_date": "2024-12-04T03:55:34Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.63.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/znmf4sik25qi02m1742a6fydxp1wxky5-gh-2.63.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gh",
+      "broken": false,
+      "derivation": "/nix/store/g2r2c4pqkqcn3h08xy40jq9h5lrbjm9m-gh-2.63.0.drv",
+      "description": "GitHub CLI tool",
+      "install_id": "gh",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=55d15ad12a74eb7d4646254e13638ad0c4128776",
+      "name": "gh-2.63.0",
+      "pname": "gh",
+      "rev": "55d15ad12a74eb7d4646254e13638ad0c4128776",
+      "rev_count": 716003,
+      "rev_date": "2024-12-03T07:54:31Z",
+      "scrape_date": "2024-12-04T03:55:34Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.63.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/bvmpp33xcnyp7l9ps6kkd5fxqm3qsalp-gh-2.63.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gh",
+      "broken": false,
+      "derivation": "/nix/store/42a8lh4si9nwmy6pnwdd36cbjqac5vrv-gh-2.63.0.drv",
+      "description": "GitHub CLI tool",
+      "install_id": "gh",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=55d15ad12a74eb7d4646254e13638ad0c4128776",
+      "name": "gh-2.63.0",
+      "pname": "gh",
+      "rev": "55d15ad12a74eb7d4646254e13638ad0c4128776",
+      "rev_count": 716003,
+      "rev_date": "2024-12-03T07:54:31Z",
+      "scrape_date": "2024-12-04T03:55:34Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.63.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/552pc2kmsq9rh4jmx3x6k2h2hnyznv8i-gh-2.63.0"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "gh",
+      "broken": false,
+      "derivation": "/nix/store/gc1n1ghm6dg67j9amid9yh5l1j6rpq1f-gh-2.63.0.drv",
+      "description": "GitHub CLI tool",
+      "install_id": "gh",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=55d15ad12a74eb7d4646254e13638ad0c4128776",
+      "name": "gh-2.63.0",
+      "pname": "gh",
+      "rev": "55d15ad12a74eb7d4646254e13638ad0c4128776",
+      "rev_count": 716003,
+      "rev_date": "2024-12-03T07:54:31Z",
+      "scrape_date": "2024-12-04T03:55:34Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "2.63.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/hn0viiq9wglf524jcb5z8h52hcfwcpyv-gh-2.63.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
     {
       "attr_path": "nodejs_22",
       "broken": false,
