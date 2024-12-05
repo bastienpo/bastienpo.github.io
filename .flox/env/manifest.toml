@@ -1,0 +1,18 @@
+version = 1
+
+[install]
+nodejs_22.pkg-path = "nodejs_22"
+pnpm.pkg-path = "pnpm"
+
+[vars]
+node_verison = "22"
+
+# The `[services]` section of the manifest allows you to define services.
+# Services defined here use the packages provided by the `[install]` section
+# and any variables you've defined in the `[vars]` section or `hook.on-activate` script.
+[services]
+# postgres.command = "postgres --config-file=pg.conf"
+
+[options]
+systems = ["aarch64-darwin", "aarch64-linux", "x86_64-darwin", "x86_64-linux"]
+cuda-detection = false
