@@ -1,8 +1,5 @@
 ---
-const navItems = [
-    { label: "Home", href: "/" },
-    { label: "Blog", href: "/blog" },
-]
+const navItems = [{ label: "blog", href: "/blog" }]
 ---
 
 <!doctype html>
@@ -15,7 +12,27 @@ const navItems = [
         <title>Astro Basics</title>
     </head>
     <body>
+        <header>
+            <nav>
+                <div class="nav-content">
+                    <a href="/" class="home-icon">🚀</a>
+                    <div class="nav-links">
+                        {
+                            navItems.map((item) => (
+                                <a href={item.href}>{item.label}</a>
+                            ))
+                        }
+                    </div>
+                </div>
+            </nav>
+        </header>
+
         <slot />
+
+        <footer>
+            <a href="https://github.com/bastienpo/bastienpo.github.io">Github</a
+            >
+        </footer>
     </body>
 </html>
 
@@ -25,5 +42,50 @@ const navItems = [
         margin: 0;
         width: 100%;
         height: 100%;
+    }
+
+    nav {
+        background-color: #f8f9fa;
+        padding: 1rem 2rem 1rem 2rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .home-icon {
+        font-size: 1.5rem;
+        text-decoration: none;
+        transition: transform 0.2s;
+    }
+
+    .home-icon:hover {
+        transform: scale(1.1);
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+        color: #666;
+    }
+
+    footer {
+        padding: 1rem;
+        text-align: center;
     }
 </style>
