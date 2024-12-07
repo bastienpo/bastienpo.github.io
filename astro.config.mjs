@@ -1,7 +1,14 @@
 // @ts-check
-import { defineConfig } from "astro/config";
+import { defineConfig } from "astro/config"
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://bastienpo.github.io",
-});
+    site: "https://bastienpo.github.io",
+    vite: {
+        resolve: {
+            alias: {
+                "@": "/src",
+            },
+        },
+    },
+})
