@@ -1,7 +1,50 @@
 ---
-import Page from "../layouts/Page.astro"
+import Page from "../layouts/page.astro"
 ---
 
 <Page>
-    <h1>Hello, world!</h1>
+    <section class="hero">
+        <div class="about">
+            <h2>About</h2>
+            <p>
+                Hi 👋 I'm Bastien, a Software Engineer from 🇫🇷. I have studied
+                <span class="topics">Artificial Intelligence</span> and <span
+                    class="topics">Big Data</span
+                >.
+            </p>
+            <p>I write mainly about AI related topics.</p>
+        </div>
+
+        <img
+            class="hero-image"
+            src="./src/profile.jpg"
+            alt="astronaut coding on mars"
+        />
+    </section>
+
+    <section>
+        <h2>Articles</h2>
+    </section>
 </Page>
+
+<style>
+    .hero {
+        display: flex;
+        width: 100%;
+    }
+
+    .hero-image {
+        width: 35%;
+        border-radius: 50%;
+    }
+
+    .topics {
+        font-weight: 500;
+    }
+
+    .about {
+        width: 65%;
+        padding: 0rem 1rem;
+        background-color: rgba(174, 71, 64, 255);
+    }
+</style>
